@@ -1,87 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Global Trust for Money Exchange | Financial Services</title>
-  <meta name="description" content="Professional financial services company providing clear, reliable support for individuals and businesses." />
+  <title>الثقة العالمية للصرافة المالية</title>
+  <meta name="description" content="شركة الثقة العالمية للصرافة المالية تقدم خدمات بيع وشراء العملات والحوالات المالية الداخلية والخارجية وتسديد الفواتير." />
+
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #1f2933;
       background: #ffffff;
+      color: #1e293b;
+      line-height: 1.8;
     }
 
     a {
-      color: inherit;
       text-decoration: none;
+      color: inherit;
     }
 
     header {
       background: #0f172a;
-      color: #ffffff;
-      padding: 18px 8%;
+      color: white;
+      padding: 20px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
     }
 
     .logo {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: bold;
-      letter-spacing: 0.3px;
     }
 
     nav a {
-      margin-left: 24px;
+      margin-right: 20px;
+      color: #e2e8f0;
       font-size: 15px;
-      color: #e5e7eb;
     }
 
     nav a:hover {
-      color: #ffffff;
+      color: white;
     }
 
     .hero {
-      background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80');
+      background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+      url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80');
       background-size: cover;
       background-position: center;
-      color: #ffffff;
-      padding: 110px 8%;
-    }
-
-    .hero-content {
-      max-width: 760px;
+      color: white;
+      padding: 120px 8%;
+      text-align: right;
     }
 
     .hero h1 {
-      font-size: 46px;
-      line-height: 1.15;
+      font-size: 48px;
       margin-bottom: 20px;
+      line-height: 1.3;
     }
 
     .hero p {
-      font-size: 19px;
-      color: #e5e7eb;
+      font-size: 20px;
+      max-width: 700px;
+      color: #e2e8f0;
       margin-bottom: 30px;
     }
 
     .button {
       display: inline-block;
       background: #2563eb;
-      color: #ffffff;
-      padding: 13px 24px;
-      border-radius: 6px;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 8px;
       font-weight: bold;
     }
 
@@ -90,41 +89,43 @@
     }
 
     section {
-      padding: 70px 8%;
+      padding: 80px 8%;
     }
 
     .section-title {
-      font-size: 32px;
-      margin-bottom: 16px;
+      font-size: 34px;
+      margin-bottom: 20px;
       color: #0f172a;
     }
 
-    .section-intro {
-      max-width: 760px;
-      margin-bottom: 36px;
-      color: #4b5563;
+    .section-text {
+      color: #475569;
+      max-width: 850px;
+      margin-bottom: 40px;
     }
 
-    .cards {
+    .services-grid,
+    .contact-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
     }
 
     .card {
       background: #f8fafc;
-      border: 1px solid #e5e7eb;
-      padding: 28px;
-      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 30px;
     }
 
     .card h3 {
-      margin-bottom: 12px;
+      margin-bottom: 15px;
       color: #0f172a;
+      font-size: 22px;
     }
 
     .card p {
-      color: #4b5563;
+      color: #475569;
     }
 
     .about {
@@ -133,16 +134,16 @@
 
     .two-column {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1fr 1fr;
       gap: 40px;
       align-items: start;
     }
 
     .info-box {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      padding: 28px;
-      border-radius: 12px;
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      border: 1px solid #e2e8f0;
     }
 
     .info-box p {
@@ -151,179 +152,210 @@
 
     .contact {
       background: #0f172a;
-      color: #ffffff;
+      color: white;
     }
 
     .contact .section-title {
-      color: #ffffff;
+      color: white;
     }
 
-    .contact .section-intro {
-      color: #d1d5db;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .contact-card {
+    .contact .card {
       background: rgba(255,255,255,0.08);
-      padding: 24px;
-      border-radius: 12px;
+      border: none;
     }
 
-    .contact-card h3 {
-      margin-bottom: 10px;
+    .contact .card h3,
+    .contact .card p {
+      color: white;
     }
 
     footer {
       background: #020617;
       color: #cbd5e1;
-      padding: 26px 8%;
-      font-size: 14px;
       text-align: center;
+      padding: 25px 8%;
+      font-size: 14px;
     }
 
-    .disclaimer {
-      margin-top: 10px;
-      color: #94a3b8;
-      font-size: 13px;
-    }
-
-    @media (max-width: 850px) {
+    @media(max-width: 850px) {
       header {
         flex-direction: column;
         align-items: flex-start;
       }
 
       nav {
-        margin-top: 12px;
+        margin-top: 15px;
       }
 
       nav a {
-        margin-left: 0;
-        margin-right: 16px;
         display: inline-block;
         margin-bottom: 8px;
       }
 
       .hero h1 {
-        font-size: 34px;
+        font-size: 36px;
       }
 
-      .cards,
-      .two-column,
-      .contact-grid {
+      .services-grid,
+      .contact-grid,
+      .two-column {
         grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">Global Trust for Money Exchange</div>
+    <div class="logo">الثقة العالمية للصرافة المالية</div>
+
     <nav>
-      <a href="#services">Services</a>
-      <a href="#about">Who We Are</a>
-      <a href="#company">Company Profile</a>
-      <a href="#contact">Contact</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#about">من نحن</a>
+      <a href="#company">ملف الشركة</a>
+      <a href="#contact">اتصل بنا</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Clear, Reliable Financial Support for Individuals and Businesses</h1>
-        <p>We provide professional financial services designed to help clients manage their goals with confidence, clarity and care.</p>
-        <a href="#contact" class="button">Contact Us</a>
-      </div>
-    </section>
+  <section class="hero">
+    <h1>الثقة العالمية للصرافة المالية</h1>
+    <p>
+      نقدم خدمات مالية موثوقة تشمل بيع وشراء العملات، الحوالات الداخلية والخارجية، وتسديد الفواتير بسرعة وأمان واحترافية.
+    </p>
 
-    <section id="services">
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-intro">We offer straightforward financial support tailored to the needs of individuals, families and businesses.</p>
-      <div class="cards">
-        <div class="card">
-          <h3>Financial Planning</h3>
-          <p>Helping clients organise their financial goals and make informed decisions for the future.</p>
-        </div>
-        <div class="card">
-          <h3>Business Support</h3>
-          <p>Practical financial guidance for businesses, including planning, reporting and financial organisation.</p>
-        </div>
-        <div class="card">
-          <h3>Consultation Services</h3>
-          <p>Clear, professional consultation to help clients understand their options and next steps.</p>
-        </div>
-      </div>
-    </section>
+    <a href="#contact" class="button">تواصل معنا</a>
+  </section>
 
-    <section id="about" class="about">
-      <div class="two-column">
-        <div>
-          <h2 class="section-title">Who We Are</h2>
-          <p class="section-intro">Global Trust for Money Exchange is a financial services company committed to providing reliable, transparent and client-focused support.</p>
-          <p>We believe financial services should be simple to understand and easy to access. Our approach is built on trust, professionalism and clear communication.</p>
-          <br />
-          <p>Whether you are an individual looking for guidance or a business seeking financial support, we aim to provide a practical service that helps you move forward with confidence.</p>
-        </div>
+  <section id="services">
+    <h2 class="section-title">خدماتنا</h2>
+
+    <p class="section-text">
+      نسعى لتقديم خدمات مالية متكاملة تلبي احتياجات الأفراد والشركات من خلال حلول سريعة وآمنة وخدمة عملاء مميزة.
+    </p>
+
+    <div class="services-grid">
+      <div class="card">
+        <h3>بيع وشراء العملات</h3>
+        <p>
+          نوفر خدمات بيع وشراء العملات بأسعار تنافسية وموثوقة مع سرعة في التنفيذ وشفافية في التعامل.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>الحوالات الداخلية</h3>
+        <p>
+          إمكانية إرسال واستلام الحوالات المالية داخل ليبيا بسهولة وسرعة مع ضمان الأمان والدقة.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>الحوالات الخارجية</h3>
+        <p>
+          تنفيذ الحوالات الدولية إلى مختلف الدول بخدمة موثوقة وإجراءات سهلة وسريعة.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>تسديد الفواتير</h3>
+        <p>
+          نوفر خدمة تسديد الفواتير المختلفة بكل سهولة لتوفير الوقت والجهد على عملائنا.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="two-column">
+
+      <div>
+        <h2 class="section-title">من نحن</h2>
+
+        <p class="section-text">
+          شركة الثقة العالمية للصرافة المالية تقدم خدمات مالية وصرافة باحترافية وشفافية، ونسعى دائماً لبناء علاقة طويلة الأمد مع عملائنا قائمة على الثقة والسرعة في تقديم الخدمة.
+        </p>
+
+        <p>
+          نؤمن بأن الخدمة الجيدة تبدأ بالاحترام والوضوح والالتزام، لذلك نحرص على توفير تجربة مريحة وآمنة لجميع عملائنا.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3 style="margin-bottom: 20px;">لماذا تختارنا؟</h3>
+
+        <p>✔ سرعة في تنفيذ المعاملات</p>
+        <p>✔ أسعار منافسة</p>
+        <p>✔ خدمة عملاء مميزة</p>
+        <p>✔ أمان وموثوقية في التعامل</p>
+        <p>✔ خبرة واحترافية</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="company">
+    <div class="two-column">
+
+      <div>
+        <h2 class="section-title">ملف الشركة</h2>
+
         <div class="info-box">
-          <h3>Why Choose Us?</h3>
-          <p>✔ Professional and approachable service</p>
-          <p>✔ Clear communication</p>
-          <p>✔ Client-focused support</p>
-          <p>✔ Practical financial guidance</p>
+          <p><strong>اسم الشركة:</strong> الثقة العالمية للحوالات المالية</p>
+          <p><strong>البريد الإلكتروني:</strong> globaltrust.gt.ly@gmail.com</p>
+          <p><strong>العنوان:</strong> ساليطت البوراوي، الضهرة، طرابلس، ليبيا</p>
+          <p><strong>رقم الهاتف:</strong> <span dir="ltr">+218 922202664</span></p>
+          <p><strong>واتساب:</strong> <span dir="ltr">+218 912202664</span></p>
         </div>
       </div>
-    </section>
 
-    <section id="company">
-      <div class="two-column">
-        <div>
-          <h2 class="section-title">Company Profile</h2>
-          <p class="section-intro">Below are the key details of our company. Please replace the placeholder information with your real company details before launch.</p>
-          <div class="info-box">
-            <p><strong>Company Name:</strong> Global Trust for Money Exchange Ltd</p>
-            <p><strong>Company Number:</strong> 00000000</p>
-            <p><strong>Registered Address:</strong> 123 Business Street, Manchester, United Kingdom, M1 1AA</p>
-            <p><strong>Email:</strong> info@yourcompany.com</p>
-            <p><strong>Phone:</strong> +44 0000 000000</p>
-          </div>
-        </div>
+      <div>
+        <h2 class="section-title">ساعات العمل</h2>
+
         <div class="info-box">
-          <h3>Opening Hours</h3>
-          <p><strong>Monday – Friday:</strong> 9:00 AM – 5:30 PM</p>
-          <p><strong>Saturday:</strong> By appointment</p>
-          <p><strong>Sunday:</strong> Closed</p>
+          <p><strong>من السبت إلى الخميس</strong></p>
+          <p>من 09:00 صباحاً حتى 06:00 مساءً</p>
         </div>
       </div>
-    </section>
 
-    <section id="contact" class="contact">
-      <h2 class="section-title">Contact Us</h2>
-      <p class="section-intro">Get in touch with us to discuss how we can support you.</p>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Email</h3>
-          <p>info@yourcompany.com</p>
-        </div>
-        <div class="contact-card">
-          <h3>Phone</h3>
-          <p>+44 0000 000000</p>
-        </div>
-        <div class="contact-card">
-          <h3>Address</h3>
-          <p>123 Business Street<br />Manchester, United Kingdom<br />M1 1AA</p>
-        </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+
+    <h2 class="section-title">اتصل بنا</h2>
+
+    <p class="section-text" style="color:#cbd5e1;">
+      يسعدنا تواصلكم معنا للإجابة عن جميع الاستفسارات وتقديم أفضل الخدمات المالية.
+    </p>
+
+    <div class="contact-grid">
+
+      <div class="card">
+        <h3>البريد الإلكتروني</h3>
+        <p>globaltrust.gt.ly@gmail.com</p>
       </div>
-    </section>
-  </main>
+
+      <div class="card">
+        <h3>رقم الهاتف</h3>
+        <p dir="ltr">+218 922202664</p>
+      </div>
+
+      <div class="card">
+        <h3>واتساب</h3>
+        <p>+218 912202664</p>
+      </div>
+
+      <div class="card">
+        <h3>العنوان</h3>
+        <p>ساليطت البوراوي، الضهرة، طرابلس، ليبيا</p>
+      </div>
+
+    </div>
+
+  </section>
 
   <footer>
-    <p>© 2026 Global Trust for Money Exchange Ltd. All rights reserved.</p>
-    <p class="disclaimer">Important: This website provides general information only and does not constitute financial advice. Replace this footer with the correct regulatory wording for your company before launch.</p>
+    © 2026 الثقة العالمية للصرافة المالية - جميع الحقوق محفوظة
   </footer>
+
 </body>
 </html>
