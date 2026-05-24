@@ -1,0 +1,26 @@
+header {
+  direction: ltr;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-image {
+  height: 60px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  direction: rtl;
+}
+
+nav {
+  direction: rtl;
+}
