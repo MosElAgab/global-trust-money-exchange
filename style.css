@@ -42,10 +42,16 @@ header {
 }
 
 .logo-image {
-  height: 110px;
+  height: 95px;
   width: auto;
+
   object-fit: contain;
-  flex-shrink: 0;
+
+  transform: scale(1.45);
+  
+
+  margin-top: -8px;
+  margin-bottom: -8px;
 }
 
 nav {
@@ -266,7 +272,7 @@ footer {
   }
 
   .logo-image {
-    height: 70px;
+    height: 90px;
   }
 
 }
