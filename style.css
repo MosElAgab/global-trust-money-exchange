@@ -623,15 +623,21 @@ footer {
 @media (max-width: 720px) {
   .site-header {
     position: relative;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr auto;
+    justify-items: stretch;
     min-height: auto;
+    gap: 12px 16px;
+    padding-top: 12px;
+    padding-bottom: 14px;
   }
 
   .header-tools {
-    width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
+  }
+
+  .header-action {
+    display: none;
   }
 
   .brand-logo {
@@ -640,6 +646,7 @@ footer {
   }
 
   .site-nav {
+    grid-column: 1 / -1;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
