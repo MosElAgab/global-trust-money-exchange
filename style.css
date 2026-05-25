@@ -352,6 +352,15 @@ img {
   font-weight: 800;
 }
 
+.service-icon.currency-symbols {
+  width: auto;
+  min-width: 92px;
+  padding: 0 12px;
+  gap: 5px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
 .service-card h3,
 .feature-list h3,
 .detail-card h3 {
