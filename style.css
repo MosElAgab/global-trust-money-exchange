@@ -625,13 +625,21 @@ footer {
     position: relative;
     grid-template-columns: 1fr auto;
     justify-items: stretch;
+    align-items: center;
     min-height: auto;
     gap: 12px 16px;
     padding-top: 12px;
     padding-bottom: 14px;
   }
 
+  .brand {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
   .header-tools {
+    grid-column: 2;
+    grid-row: 1;
     justify-content: flex-end;
     flex-wrap: wrap;
   }
@@ -647,6 +655,7 @@ footer {
 
   .site-nav {
     grid-column: 1 / -1;
+    grid-row: 2;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
