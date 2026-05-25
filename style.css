@@ -442,10 +442,26 @@ html[dir="ltr"] .hero-stats div + div {
 }
 
 .feature-list p {
-  display: flex;
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
   gap: 12px;
   align-items: center;
   color: #273244;
+  text-align: start;
+}
+
+html[dir="rtl"] .feature-list p {
+  grid-template-columns: minmax(0, 1fr) 28px;
+}
+
+html[dir="rtl"] .feature-list p > span:first-child {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+html[dir="rtl"] .feature-list p > span:last-child {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .feature-list p > span:first-child {
@@ -459,6 +475,13 @@ html[dir="ltr"] .hero-stats div + div {
   background: #fff7df;
   color: #9c741f;
   font-weight: 800;
+}
+
+.feature-list p > span:last-child {
+  min-width: 0;
+  overflow-wrap: normal;
+  word-break: normal;
+  line-height: 1.55;
 }
 
 .details-section {
@@ -702,6 +725,14 @@ footer {
 
   .service-card {
     min-height: auto;
+  }
+
+  .feature-list {
+    padding: 24px 20px;
+  }
+
+  .feature-list p {
+    font-size: 16px;
   }
 
   footer {
