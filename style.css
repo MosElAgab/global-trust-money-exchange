@@ -64,9 +64,9 @@ img {
 }
 
 .brand-logo {
-  width: 218px;
-  height: 68px;
-  object-fit: contain;
+  width: 290px;
+  height: 72px;
+  object-fit: cover;
   object-position: center;
   border-radius: var(--radius);
 }
@@ -635,7 +635,8 @@ footer {
   }
 
   .brand-logo {
-    width: 198px;
+    width: 232px;
+    height: 68px;
   }
 
   .site-nav {
